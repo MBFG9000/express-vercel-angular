@@ -221,4 +221,7 @@ app.post('/api/contact', (req, res) => {
   res.status(200).json({ success: true, message: 'Form received successfully' });
 });
 
-module.exports = app;
+app.listen(PORT, ()=>{
+  `Server started at port ${PORT}`;
+
+});
